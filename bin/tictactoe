@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
-require 'pry'
-require_relative '../lib/tic_tac_toe.rb'
-
-new_game = TicTacToe.new
-new_game.display_board
-new_game.play
+ 
+require_relative '../lib/tic_tac_toe'
+ 
+board = [" "," "," "," "," "," "," "," "," "]
+ 
+puts "Welcome to Tic Tac Toe!"
+display_board(board)
+ 
+play(board)
